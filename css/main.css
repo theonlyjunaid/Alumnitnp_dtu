@@ -280,3 +280,14 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+    /* Image Sizes */
+
+.lectureImg{
+    width: 250px; 
+    height: 250px; 
+    object-fit: fill;
+    object-position: 25% 25%; 
+    border: solid 1px #CCC;
+}
+
