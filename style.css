@@ -131,6 +131,9 @@ a:focus {
   outline: 0 none;
 }
 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 100%;
   height: auto;
 }
@@ -1897,7 +1900,7 @@ h2.sidebar-title:before {
   z-index: 10;
 }
 .main-menu-area .logo-area {
-  margin: 21px 0;
+  margin: 6px 0;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .main-menu-area .logo-area {
@@ -2254,10 +2257,16 @@ nav#desktop-nav li.has-child-menu:hover ul.thired-level {
   top: 0;
   z-index: 100;
 }
+.img-responsive{
+  height: 70px;
+  width: 70px;
+}
 .slider1-area.index1 {
   margin-top: 82px;
 }
+
 @media only screen and (max-width: 767px) {
+  
   .slider1-area.index1 {
     margin-top: 0;
   }
