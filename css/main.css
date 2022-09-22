@@ -384,3 +384,14 @@ textarea {
     width: 20%;
     
 }
+#header-a{
+    color: #00e3ff;
+}
+.navbar1{
+    color: #00e3ff;
+    background-color: #1b88eb;
+}
+.navbar1 li{
+    font-size:larger;
+}
+
