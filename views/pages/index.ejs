@@ -243,61 +243,60 @@
       </header>
       <!-- Header Area End Here -->
       <!-- Slider 1 Area Start Here -->
-      
 
-    <section style="display: flex;" >
-      <div class="slider1-area overlay-default index1" style="width: 70%;">
-        <div class="bend niceties preview-1">
-          <div
-            id="ensign-nivoslider-3"
-            class="slides"
-            style="height: 580px; align-items: center"
-          >
-            <img
-              src="img/slider/images2/971435_560604467348068_1180735936_n.jpg"
-              alt="slider"
-              title="#slider-direction-1"
-            />
-            <img
-              src="img/slider/images2/1483124_560602227348292_142122668_n.jpg"
-              alt="slider"
-              title="#slider-direction-2"
-            />
-            <img
-              src="img/slider/images2/1486743_560603090681539_266586712_n.jpg"
-              alt="slider"
-              title="#slider-direction-3"
-            />
-          </div>
-          <div id="slider-direction-1" class="t-cn slider-direction">
-            <div class="slider-content s-tb slide-1">
-              <div class="title-container s-tb-c">
-                <div class="title1">ALumni Forum DTU</div>
-                <p>
-                  Emply dummy text of the printing and typesetting industry orem
-                  Ipsum has been the industry's standard <br />dummy text ever
-                  sinceprinting and typesetting industry.
-                </p>
-                <!-- <div class="slider-btn-area">
+      <section style="display: flex">
+        <div class="slider1-area overlay-default index1" style="width: 70%">
+          <div class="bend niceties preview-1">
+            <div
+              id="ensign-nivoslider-3"
+              class="slides"
+              style="height: 580px; align-items: center"
+            >
+              <img
+                src="img/slider/images2/971435_560604467348068_1180735936_n.jpg"
+                alt="slider"
+                title="#slider-direction-1"
+              />
+              <img
+                src="img/slider/images2/1483124_560602227348292_142122668_n.jpg"
+                alt="slider"
+                title="#slider-direction-2"
+              />
+              <img
+                src="img/slider/images2/1486743_560603090681539_266586712_n.jpg"
+                alt="slider"
+                title="#slider-direction-3"
+              />
+            </div>
+            <div id="slider-direction-1" class="t-cn slider-direction">
+              <div class="slider-content s-tb slide-1">
+                <div class="title-container s-tb-c">
+                  <div class="title1">ALumni Forum DTU</div>
+                  <p>
+                    Emply dummy text of the printing and typesetting industry
+                    orem Ipsum has been the industry's standard <br />dummy text
+                    ever sinceprinting and typesetting industry.
+                  </p>
+                  <!-- <div class="slider-btn-area">
                                 <a href="#" class="default-big-btn">Start a Course</a>
                             </div> -->
+                </div>
               </div>
             </div>
-          </div>
-          <div id="slider-direction-2" class="t-cn slider-direction">
-            <div class="slider-content s-tb slide-2">
-              <div class="title-container s-tb-c">
-                <div class="title1">ALumni Forum DTU</div>
-                <p>
-                  Emply dummy text of the printing and typesetting industry orem
-                  Ipsum has been the industry's standard <br />dummy text ever
-                  sinceprinting and typesetting industry.
-                </p>
+            <div id="slider-direction-2" class="t-cn slider-direction">
+              <div class="slider-content s-tb slide-2">
+                <div class="title-container s-tb-c">
+                  <div class="title1">ALumni Forum DTU</div>
+                  <p>
+                    Emply dummy text of the printing and typesetting industry
+                    orem Ipsum has been the industry's standard <br />dummy text
+                    ever sinceprinting and typesetting industry.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          
-          <!-- <div id="slider-direction-3" class="t-cn slider-direction">
+
+            <!-- <div id="slider-direction-3" class="t-cn slider-direction">
                     <div class="slider-content s-tb slide-3">
                         <div class="title-container s-tb-c">
                             <div class="title1">Best Education Into PHP</div>
@@ -307,13 +306,43 @@
                         </div>
                     </div>
                 </div> -->
+          </div>
         </div>
-      </div>
-      <div style="width: 30%;">
-
-      </div>
-      
-    </section>
+        <div
+          style="
+            width: 30%;
+            display: flex;
+            align-items: center;
+            background-color: #f5f5f5;
+          "
+          class="event-inner-area"
+        >
+          <ul class="event-wrapper">
+            <h2 class="title-default-left" style="text-align: center">
+              Upcoming Event
+            </h2>
+            <li>
+              <div class="event-calender-wrapper">
+                <div class="event-calender-holder">
+                  <h3><%= events[0].date[0] %></h3>
+                  <p><%= events[0].date[1] %></p>
+                  <span><%= events[0].date[2] %></span>
+                </div>
+              </div>
+              <div class="event-content-holder">
+                <h3>
+                  <a href="single-event.html"><%= events[0]._doc.title %></a>
+                </h3>
+                <p><%= events[0]._doc.description %></p>
+                <ul>
+                  <li><%= events[0]._doc.time %></li>
+                  <li><%= events[0]._doc.venue %></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
       <!-- Slider 1 Area End Here -->
       <!-- Service 1 Area Start Here -->
       <!-- <div class="service1-area">
@@ -354,8 +383,6 @@
       <!-- Service 1 Area End Here -->
       <!-- About 1 Area Start Here -->
 
-
-
       <div class="about1-area">
         <div class="container">
           <h1
@@ -383,7 +410,7 @@
                 </div> -->
         </div>
       </div>
-    
+
       <div class="lecturers-area">
         <div class="container">
           <h2 class="title-default-left">Our Alumni</h2>
@@ -650,9 +677,6 @@
         </div>
       </div>
 
-
-
-
       <div class="news-event-area">
         <div class="container">
           <div class="row">
@@ -747,11 +771,7 @@
               </ul> -->
               <ul class="event-wrapper">
                 <% events.forEach((item)=> { %>
-                <li
-                  class="wow bounceInUp"
-                  data-wow-duration="2s"
-                  data-wow-delay=".1s"
-                >
+                <li>
                   <div class="event-calender-wrapper">
                     <div class="event-calender-holder">
                       <h3><%= item.date[0] %></h3>
@@ -780,8 +800,6 @@
         </div>
       </div>
 
-      
-     
       <!-- Brand Area End Here -->
       <!-- Footer Area Start Here -->
       <footer id="footer-id">
