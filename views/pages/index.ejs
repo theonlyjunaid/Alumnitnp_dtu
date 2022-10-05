@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="vendor/OwlCarousel/owl.carousel.min.css" />
     <link
       rel="stylesheet"
-      href="vendor/OwlCarousel/owl.theme.default.min.css"
+      href="/vendor/OwlCarousel/owl.theme.default.min.css"
     />
     <!-- Main Menu CSS -->
     <link rel="stylesheet" href="/css/meanmenu.min.css" />
@@ -52,9 +52,9 @@
     <!-- ReImageGrid CSS -->
     <link rel="stylesheet" href="/css/reImageGrid.css" />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
     <!-- Modernizr Js -->
-    <script src="js/modernizr-2.8.3.min.js"></script>
+    <script src="/js/modernizr-2.8.3.min.js"></script>
   </head>
 
   <body>
@@ -79,7 +79,7 @@
               <div class="row">
                 <div class="col-lg-2 col-md-3">
                   <div class="logo-area">
-                    <a href="index.html"
+                    <a href="/"
                       ><img
                         class="img-responsive"
                         src="140px-DTU,_Delhi_official_logo.png"
@@ -91,7 +91,7 @@
                   <nav id="desktop-nav">
                     <ul>
                       <li class="active">
-                        <a href="index.html">Home</a>
+                        <a href="/">Home</a>
                         <!-- <ul>
                                                 <li class="active"><a href="index.html">Home 1</a></li>
                                               
@@ -351,6 +351,7 @@
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 news-inner-area">
               <h2 class="title-default-left">Latest News</h2>
               <ul class="news-wrapper">
+                <% news.forEach((item)=> { %>
                 <li>
                   <div class="news-img-holder">
                     <a href="#"
@@ -362,59 +363,13 @@
                   </div>
                   <div class="news-content-holder">
                     <h3>
-                      <a href="single-news.html"
-                        >Summer Course Start From 1st June</a
-                      >
+                      <a href="single-news.html"><%= item.title %></a>
                     </h3>
-                    <div class="post-date">June 15, 2017</div>
-                    <p>
-                      Pellentese turpis dignissim amet area ducation process
-                      facilitating Knowledge.
-                    </p>
+                    <div class="post-date"><%= item.date %></div>
+                    <p><%= item.description %></p>
                   </div>
                 </li>
-                <li>
-                  <div class="news-img-holder">
-                    <a href="#"
-                      ><img
-                        src="img/news/2.jpg"
-                        class="img-responsive"
-                        alt="news"
-                    /></a>
-                  </div>
-                  <div class="news-content-holder">
-                    <h3>
-                      <a href="single-news.html"
-                        >Guest Interview will Occur Soon</a
-                      >
-                    </h3>
-                    <div class="post-date">June 15, 2017</div>
-                    <p>
-                      Pellentese turpis dignissim amet area ducation process
-                      facilitating Knowledge.
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <div class="news-img-holder">
-                    <a href="#"
-                      ><img
-                        src="img/news/3.jpg"
-                        class="img-responsive"
-                        alt="news"
-                    /></a>
-                  </div>
-                  <div class="news-content-holder">
-                    <h3>
-                      <a href="single-news.html">Easy English Learning Way</a>
-                    </h3>
-                    <div class="post-date">June 15, 2017</div>
-                    <p>
-                      Pellentese turpis dignissim amet area ducation process
-                      facilitating Knowledge.
-                    </p>
-                  </div>
-                </li>
+                <% }) %>
               </ul>
               <div class="news-btn-holder">
                 <a href="#" class="view-all-accent-btn">View All</a>
@@ -422,7 +377,7 @@
             </div>
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 event-inner-area">
               <h2 class="title-default-left">Upcoming Events</h2>
-              <ul class="event-wrapper">
+              <!-- <ul class="event-wrapper">
                 <li
                   class="wow bounceInUp"
                   data-wow-duration="2s"
@@ -481,6 +436,33 @@
                     </ul>
                   </div>
                 </li>
+              </ul> -->
+              <ul class="event-wrapper">
+                <% events.forEach((item)=> { %>
+                <li
+                  class="wow bounceInUp"
+                  data-wow-duration="2s"
+                  data-wow-delay=".1s"
+                >
+                  <div class="event-calender-wrapper">
+                    <div class="event-calender-holder">
+                      <h3><%= item.date[0] %></h3>
+                      <p><%= item.date[1] %></p>
+                      <span><%= item.date[2] %></span>
+                    </div>
+                  </div>
+                  <div class="event-content-holder">
+                    <h3>
+                      <a href="single-event.html"><%= item._doc.title %></a>
+                    </h3>
+                    <p><%= item._doc.description %></p>
+                    <ul>
+                      <li><%= item._doc.time %></li>
+                      <li><%= item._doc.venue %></li>
+                    </ul>
+                  </div>
+                </li>
+                <% }) %>
               </ul>
               <div class="event-btn-holder">
                 <a href="#" class="view-all-primary-btn">View All</a>
