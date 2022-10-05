@@ -309,8 +309,32 @@
                 </div> -->
         </div>
       </div>
-      <div style="width: 30%;">
-
+      <div style="width: 30%">
+        <ul>
+          <li
+            class="wow bounceInUp"
+            data-wow-duration="2s"
+            data-wow-delay=".1s"
+          >
+            <div class="event-calender-wrapper">
+              <div class="event-calender-holder">
+                <h3><%= events[0].date[0] %></h3>
+                <p><%= events[0].date[1] %></p>
+                <span><%= events[0].date[2] %></span>
+              </div>
+            </div>
+            <div class="event-content-holder">
+              <h3>
+                <a href="single-event.html"><%= events[0]._doc.title %></a>
+              </h3>
+              <p><%= events[0]._doc.description %></p>
+              <ul>
+                <li><%= events[0]._doc.time %></li>
+                <li><%= events[0]._doc.venue %></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
       </div>
       
     </section>
