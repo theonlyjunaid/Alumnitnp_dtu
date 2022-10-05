@@ -243,7 +243,10 @@
       </header>
       <!-- Header Area End Here -->
       <!-- Slider 1 Area Start Here -->
-      <div class="slider1-area overlay-default index1">
+      
+
+    <section style="display: flex;" >
+      <div class="slider1-area overlay-default index1" style="width: 70%;">
         <div class="bend niceties preview-1">
           <div
             id="ensign-nivoslider-3"
@@ -293,6 +296,7 @@
               </div>
             </div>
           </div>
+          
           <!-- <div id="slider-direction-3" class="t-cn slider-direction">
                     <div class="slider-content s-tb slide-3">
                         <div class="title-container s-tb-c">
@@ -305,9 +309,11 @@
                 </div> -->
         </div>
       </div>
+      
+    </section>
       <!-- Slider 1 Area End Here -->
       <!-- Service 1 Area Start Here -->
-      <div class="service1-area">
+      <!-- <div class="service1-area">
         <div class="service1-inner-area">
           <div class="container">
             <div class="row service1-wrapper">
@@ -341,136 +347,11 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- Service 1 Area End Here -->
       <!-- About 1 Area Start Here -->
 
-      <div class="news-event-area">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 news-inner-area">
-              <h2 class="title-default-left">Latest News</h2>
-              <ul class="news-wrapper">
-                <% news.forEach((item)=> { %>
-                <li>
-                  <div class="news-img-holder">
-                    <a href="#"
-                      ><img
-                        src="img/news/1.jpg"
-                        class="img-responsive"
-                        alt="news"
-                    /></a>
-                  </div>
-                  <div class="news-content-holder">
-                    <h3>
-                      <a href="single-news.html"><%= item.title %></a>
-                    </h3>
-                    <div class="post-date"><%= item.date %></div>
-                    <p><%= item.description %></p>
-                  </div>
-                </li>
-                <% }) %>
-              </ul>
-              <div class="news-btn-holder">
-                <a href="#" class="view-all-accent-btn">View All</a>
-              </div>
-            </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 event-inner-area">
-              <h2 class="title-default-left">Upcoming Events</h2>
-              <!-- <ul class="event-wrapper">
-                <li
-                  class="wow bounceInUp"
-                  data-wow-duration="2s"
-                  data-wow-delay=".1s"
-                >
-                  <div class="event-calender-wrapper">
-                    <div class="event-calender-holder">
-                      <h3>26</h3>
-                      <p>Jan</p>
-                      <span>2017</span>
-                    </div>
-                  </div>
-                  <div class="event-content-holder">
-                    <h3>
-                      <a href="single-event.html"
-                        >Html MeetUp Conference 2017</a
-                      >
-                    </h3>
-                    <p>
-                      Pellentese turpis dignissim amet area ducation process
-                      facilitating Knowledge. Pellentese turpis dignissim amet
-                      area ducation process facilitating Knowledge. Pellentese
-                      turpis dignissim amet area ducation.
-                    </p>
-                    <ul>
-                      <li>04:00 PM - 06:00 PM</li>
-                      <li>Australia , Melborn</li>
-                    </ul>
-                  </div>
-                </li>
-                <li
-                  class="wow bounceInUp"
-                  data-wow-duration="2s"
-                  data-wow-delay=".3s"
-                >
-                  <div class="event-calender-wrapper">
-                    <div class="event-calender-holder">
-                      <h3>26</h3>
-                      <p>Jan</p>
-                      <span>2017</span>
-                    </div>
-                  </div>
-                  <div class="event-content-holder">
-                    <h3>
-                      <a href="single-event.html">Workshop On UI Design</a>
-                    </h3>
-                    <p>
-                      Pellentese turpis dignissim amet area ducation process
-                      facilitating Knowledge. Pellentese turpis dignissim amet
-                      area ducation process facilitating Knowledge. Pellentese
-                      turpis dignissim amet area ducation.
-                    </p>
-                    <ul>
-                      <li>03:00 PM - 05:00 PM</li>
-                      <li>Australia , Melborn</li>
-                    </ul>
-                  </div>
-                </li>
-              </ul> -->
-              <ul class="event-wrapper">
-                <% events.forEach((item)=> { %>
-                <li
-                  class="wow bounceInUp"
-                  data-wow-duration="2s"
-                  data-wow-delay=".1s"
-                >
-                  <div class="event-calender-wrapper">
-                    <div class="event-calender-holder">
-                      <h3><%= item.date[0] %></h3>
-                      <p><%= item.date[1] %></p>
-                      <span><%= item.date[2] %></span>
-                    </div>
-                  </div>
-                  <div class="event-content-holder">
-                    <h3>
-                      <a href="single-event.html"><%= item._doc.title %></a>
-                    </h3>
-                    <p><%= item._doc.description %></p>
-                    <ul>
-                      <li><%= item._doc.time %></li>
-                      <li><%= item._doc.venue %></li>
-                    </ul>
-                  </div>
-                </li>
-                <% }) %>
-              </ul>
-              <div class="event-btn-holder">
-                <a href="#" class="view-all-primary-btn">View All</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
 
       <div class="about1-area">
         <div class="container">
@@ -499,173 +380,7 @@
                 </div> -->
         </div>
       </div>
-      <!-- About 1 Area End Here -->
-      <!-- Courses 1 Area Start Here -->
-      <!-- <div class="courses1-area">
-            <div class="container">
-                <h2 class="title-default-left">Featured Courses</h2>
-            </div>
-            <div id="shadow-carousel" class="container">
-                <div class="rc-carousel" data-loop="true" data-items="4" data-margin="20" data-autoplay="false" data-autoplay-timeout="10000" data-smart-speed="2000" data-dots="false" data-nav="true" data-nav-speed="false" data-r-x-small="1" data-r-x-small-nav="true"
-                    data-r-x-small-dots="false" data-r-x-medium="2" data-r-x-medium-nav="true" data-r-x-medium-dots="false" data-r-small="2" data-r-small-nav="true" data-r-small-dots="false" data-r-medium="3" data-r-medium-nav="true" data-r-medium-dots="false"
-                    data-r-large="4" data-r-large-nav="true" data-r-large-dots="false">
-                    <div class="courses-box1">
-                        <div class="single-item-wrapper">
-                            <div class="courses-img-wrapper hvr-bounce-to-bottom">
-                                <img class="img-responsive" src="img/course/1.jpg" alt="courses">
-                                <a href="single-courses1.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                            </div>
-                            <div class="courses-content-wrapper">
-                                <h3 class="item-title"><a href="#">Basic Philosopphy</a></h3>
-                                <p class="item-content">Rmply dummy text printing setting industry it’s free demo.</p>
-                                <ul class="courses-info">
-                                    <li>1 Year
-                                        <br><span> Course</span></li>
-                                    <li>40
-                                        <br><span> Classes</span></li>
-                                    <li>10 am - 11 am
-                                        <br><span> Classes</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="courses-box1">
-                        <div class="single-item-wrapper">
-                            <div class="courses-img-wrapper hvr-bounce-to-bottom">
-                                <img class="img-responsive" src="img/course/2.jpg" alt="courses">
-                                <a href="single-courses1.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                            </div>
-                            <div class="courses-content-wrapper">
-                                <h3 class="item-title"><a href="#">GMAT</a></h3>
-                                <p class="item-content">Rmply dummy text printing setting industry it’s free demo.</p>
-                                <ul class="courses-info">
-                                    <li>3 Months
-                                        <br><span> Course</span></li>
-                                    <li>30
-                                        <br><span> Classes</span></li>
-                                    <li>10 am - 11 am
-                                        <br><span> Classes</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="courses-box1">
-                        <div class="single-item-wrapper">
-                            <div class="courses-img-wrapper hvr-bounce-to-bottom">
-                                <img class="img-responsive" src="img/course/3.jpg" alt="courses">
-                                <a href="single-courses1.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                            </div>
-                            <div class="courses-content-wrapper">
-                                <h3 class="item-title"><a href="#">IELTS</a></h3>
-                                <p class="item-content">Rmply dummy text printing setting industry it’s free demo.</p>
-                                <ul class="courses-info">
-                                    <li>2 Months
-                                        <br><span> Course</span></li>
-                                    <li>24
-                                        <br><span> Classes</span></li>
-                                    <li>10 am - 11 am
-                                        <br><span> Classes</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="courses-box1">
-                        <div class="single-item-wrapper">
-                            <div class="courses-img-wrapper hvr-bounce-to-bottom">
-                                <img class="img-responsive" src="img/course/4.jpg" alt="courses">
-                                <a href="single-courses1.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                            </div>
-                            <div class="courses-content-wrapper">
-                                <h3 class="item-title"><a href="#">Regular MBA</a></h3>
-                                <p class="item-content">Rmply dummy text printing setting industry it’s free demo.</p>
-                                <ul class="courses-info">
-                                    <li>1 Year
-                                        <br><span> Course</span></li>
-                                    <li>50
-                                        <br><span> Classes</span></li>
-                                    <li>10 am - 11 am
-                                        <br><span> Time</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="courses-box1">
-                        <div class="single-item-wrapper">
-                            <div class="courses-img-wrapper hvr-bounce-to-bottom">
-                                <img class="img-responsive" src="img/course/5.jpg" alt="courses">
-                                <a href="single-courses1.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                            </div>
-                            <div class="courses-content-wrapper">
-                                <h3 class="item-title"><a href="#">Basic Philosopphy</a></h3>
-                                <p class="item-content">Rmply dummy text printing setting industry it’s free demo.</p>
-                                <ul class="courses-info">
-                                    <li>1 Year
-                                        <br><span> Course</span></li>
-                                    <li>40
-                                        <br><span> Classes</span></li>
-                                    <li>10 am - 11 am
-                                        <br><span> Time</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="courses-box1">
-                        <div class="single-item-wrapper">
-                            <div class="courses-img-wrapper hvr-bounce-to-bottom">
-                                <img class="img-responsive" src="img/course/6.jpg" alt="courses">
-                                <a href="single-courses1.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                            </div>
-                            <div class="courses-content-wrapper">
-                                <h3 class="item-title"><a href="#">GMAT</a></h3>
-                                <p class="item-content">Rmply dummy text printing setting industry it’s free demo.</p>
-                                <ul class="courses-info">
-                                    <li>3 Months
-                                        <br><span> Course</span></li>
-                                    <li>30
-                                        <br><span> Classes</span></li>
-                                    <li>10 am - 11 am
-                                        <br><span> Time</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="courses-box1">
-                        <div class="single-item-wrapper">
-                            <div class="courses-img-wrapper hvr-bounce-to-bottom">
-                                <img class="img-responsive" src="img/course/7.jpg" alt="courses">
-                                <a href="single-courses1.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                            </div>
-                            <div class="courses-content-wrapper">
-                                <h3 class="item-title"><a href="#">Regular MBA</a></h3>
-                                <p class="item-content">Rmply dummy text printing setting industry it’s free demo.</p>
-                                <ul class="courses-info">
-                                    <li>1 Year
-                                        <br><span> Course</span></li>
-                                    <li>50
-                                        <br><span> Classes</span></li>
-                                    <li>10 am - 11 am
-                                        <br><span> Time</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-      <!-- Courses 1 Area End Here -->
-      <!-- Video Area Start Here -->
-      <!-- <div class="video-area overlay-video bg-common-style" style="background-image: url('img/banner/1.jpg');">
-            <div class="container">
-                <div class="video-content">
-                    <h2 class="video-title">Watch Campus Life Video Tour</h2>
-                    <p class="video-sub-title">Vmply dummy text of the printing and typesetting industryorem
-                        <br>Ipsum industry's standard dum an unknowramble.</p>
-                    <a class="play-btn popup-youtube wow bounceInUp" data-wow-duration="2s" data-wow-delay=".1s" href="http://www.youtube.com/watch?v=1iIZeIy7TqM"><i class="fa fa-play" aria-hidden="true"></i></a>
-                </div>
-            </div>
-        </div> -->
-      <!-- Video Area End Here -->
-      <!-- Lecturers Area Start Here -->
+    
       <div class="lecturers-area">
         <div class="container">
           <h2 class="title-default-left">Our Alumni</h2>
@@ -931,154 +646,139 @@
           </div>
         </div>
       </div>
-      <!-- Lecturers Area End Here -->
-      <!-- News and Event Area Start Here -->
 
-      <!-- News and Event Area End Here -->
-      <!-- Counter Area Start Here -->
-      <!-- <hr id= "footer-hr">
-        <div class="counter-area bg-primary-deep" style="background-image: url('img/banner/4.jpg');">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 counter1-box wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".20s">
-                        <h2 class="about-counter title-bar-counter" data-num="80">80</h2>
-                        <p>PROFESSIONAL TEACHER</p>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 counter1-box wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".40s">
-                        <h2 class="about-counter title-bar-counter" data-num="20">20</h2>
-                        <p>NEWS COURSES EVERY YEARS</p>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 counter1-box wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".60s">
-                        <h2 class="about-counter title-bar-counter" data-num="56">56</h2>
-                        <p>NEWS COURSES EVERY YEARS</p>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 counter1-box wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".80s">
-                        <h2 class="about-counter title-bar-counter" data-num="77">77</h2>
-                        <p>REGISTERED STUDENTS</p>
-                    </div>
-                </div>
+
+
+
+      <div class="news-event-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 news-inner-area">
+              <h2 class="title-default-left">Latest News</h2>
+              <ul class="news-wrapper">
+                <% news.forEach((item)=> { %>
+                <li>
+                  <div class="news-img-holder">
+                    <a href="#"
+                      ><img
+                        src="img/news/1.jpg"
+                        class="img-responsive"
+                        alt="news"
+                    /></a>
+                  </div>
+                  <div class="news-content-holder">
+                    <h3>
+                      <a href="single-news.html"><%= item.title %></a>
+                    </h3>
+                    <div class="post-date"><%= item.date %></div>
+                    <p><%= item.description %></p>
+                  </div>
+                </li>
+                <% }) %>
+              </ul>
+              <div class="news-btn-holder">
+                <a href="#" class="view-all-accent-btn">View All</a>
+              </div>
             </div>
-        </div> -->
-      <!-- Counter Area End Here -->
-
-      <!-- Students Join 1 Area Start Here -->
-      <!-- <div class="students-join1-area">
-            <div class="container">
-                <div class="students-join1-wrapper">
-                    <div class="students-join1-left">
-                        <div id="ri-grid" class="author-banner-bg ri-grid header text-center">
-                            <ul class="ri-grid-list">
-                                <li>
-                                    <a href="#"><img src="img/students/student1.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="img/students/student2.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="img/students/student3.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="img/students/student4.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="img/students/student5.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="img/students/student6.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="img/students/student7.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="img/students/student8.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="img/students/student1.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="img/students/student2.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="img/students/student3.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="img/students/student4.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="img/students/student5.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="img/students/student6.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="img/students/student7.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="img/students/student8.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="img/students/student1.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="img/students/student2.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="img/students/student3.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="img/students/student4.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="img/students/student5.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="img/students/student6.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="img/students/student7.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="img/students/student8.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="img/students/student1.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="img/students/student2.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="img/students/student3.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="img/students/student4.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="img/students/student5.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="img/students/student6.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="img/students/student7.jpg" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="img/students/student8.jpg" alt=""></a>
-                                </li>
-                            </ul>
-                        </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 event-inner-area">
+              <h2 class="title-default-left">Upcoming Events</h2>
+              <!-- <ul class="event-wrapper">
+                <li
+                  class="wow bounceInUp"
+                  data-wow-duration="2s"
+                  data-wow-delay=".1s"
+                >
+                  <div class="event-calender-wrapper">
+                    <div class="event-calender-holder">
+                      <h3>26</h3>
+                      <p>Jan</p>
+                      <span>2017</span>
                     </div>
-                    <div class="students-join1-right">
-                        <div>
-                            <h2>Join<span> 29,12,093</span> Students.</h2>
-                            <a href="#" class="join-now-btn">Join Now</a>
-                        </div>
+                  </div>
+                  <div class="event-content-holder">
+                    <h3>
+                      <a href="single-event.html"
+                        >Html MeetUp Conference 2017</a
+                      >
+                    </h3>
+                    <p>
+                      Pellentese turpis dignissim amet area ducation process
+                      facilitating Knowledge. Pellentese turpis dignissim amet
+                      area ducation process facilitating Knowledge. Pellentese
+                      turpis dignissim amet area ducation.
+                    </p>
+                    <ul>
+                      <li>04:00 PM - 06:00 PM</li>
+                      <li>Australia , Melborn</li>
+                    </ul>
+                  </div>
+                </li>
+                <li
+                  class="wow bounceInUp"
+                  data-wow-duration="2s"
+                  data-wow-delay=".3s"
+                >
+                  <div class="event-calender-wrapper">
+                    <div class="event-calender-holder">
+                      <h3>26</h3>
+                      <p>Jan</p>
+                      <span>2017</span>
                     </div>
-                </div>
+                  </div>
+                  <div class="event-content-holder">
+                    <h3>
+                      <a href="single-event.html">Workshop On UI Design</a>
+                    </h3>
+                    <p>
+                      Pellentese turpis dignissim amet area ducation process
+                      facilitating Knowledge. Pellentese turpis dignissim amet
+                      area ducation process facilitating Knowledge. Pellentese
+                      turpis dignissim amet area ducation.
+                    </p>
+                    <ul>
+                      <li>03:00 PM - 05:00 PM</li>
+                      <li>Australia , Melborn</li>
+                    </ul>
+                  </div>
+                </li>
+              </ul> -->
+              <ul class="event-wrapper">
+                <% events.forEach((item)=> { %>
+                <li
+                  class="wow bounceInUp"
+                  data-wow-duration="2s"
+                  data-wow-delay=".1s"
+                >
+                  <div class="event-calender-wrapper">
+                    <div class="event-calender-holder">
+                      <h3><%= item.date[0] %></h3>
+                      <p><%= item.date[1] %></p>
+                      <span><%= item.date[2] %></span>
+                    </div>
+                  </div>
+                  <div class="event-content-holder">
+                    <h3>
+                      <a href="single-event.html"><%= item._doc.title %></a>
+                    </h3>
+                    <p><%= item._doc.description %></p>
+                    <ul>
+                      <li><%= item._doc.time %></li>
+                      <li><%= item._doc.venue %></li>
+                    </ul>
+                  </div>
+                </li>
+                <% }) %>
+              </ul>
+              <div class="event-btn-holder">
+                <a href="#" class="view-all-primary-btn">View All</a>
+              </div>
             </div>
-        </div> -->
-      <!-- Students Join 1 Area End Here -->
-      <!-- Brand Area Start Here -->
+          </div>
+        </div>
+      </div>
 
+      
+     
       <!-- Brand Area End Here -->
       <!-- Footer Area Start Here -->
       <footer id="footer-id">

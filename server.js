@@ -12,7 +12,7 @@ const app = express();
 
 app.set("view engine", "ejs");
 
-// mongoose.connect(process.env.MONGODB_URL);
+mongoose.connect(process.env.MONGODB_URL);
 
 app.use(express.static(__dirname + "/public"));
 

@@ -364,7 +364,7 @@
 
             <div class="news-event-area">
                 <div class="container">
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 news-inner-area">
                             <h2 class="title-default-left">Latest News</h2>
                             <ul class="news-wrapper">
@@ -439,7 +439,129 @@
                             </div>
                             
                         </div>
-                    </div>
+                    </div> -->
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 news-inner-area">
+                          <h2 class="title-default-left">Latest News</h2>
+                          <ul class="news-wrapper">
+                            <% news.forEach((item)=> { %>
+                            <li>
+                              <div class="news-img-holder">
+                                <a href="#"
+                                  ><img
+                                    src="img/news/1.jpg"
+                                    class="img-responsive"
+                                    alt="news"
+                                /></a>
+                              </div>
+                              <div class="news-content-holder">
+                                <h3>
+                                  <a href="single-news.html"><%= item.title %></a>
+                                </h3>
+                                <div class="post-date"><%= item.date %></div>
+                                <p><%= item.description %></p>
+                              </div>
+                            </li>
+                            <% }) %>
+                          </ul>
+                          <div class="news-btn-holder">
+                            <a href="#" class="view-all-accent-btn">View All</a>
+                          </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 event-inner-area">
+                          <h2 class="title-default-left">Upcoming Events</h2>
+                          <!-- <ul class="event-wrapper">
+                            <li
+                              class="wow bounceInUp"
+                              data-wow-duration="2s"
+                              data-wow-delay=".1s"
+                            >
+                              <div class="event-calender-wrapper">
+                                <div class="event-calender-holder">
+                                  <h3>26</h3>
+                                  <p>Jan</p>
+                                  <span>2017</span>
+                                </div>
+                              </div>
+                              <div class="event-content-holder">
+                                <h3>
+                                  <a href="single-event.html"
+                                    >Html MeetUp Conference 2017</a
+                                  >
+                                </h3>
+                                <p>
+                                  Pellentese turpis dignissim amet area ducation process
+                                  facilitating Knowledge. Pellentese turpis dignissim amet
+                                  area ducation process facilitating Knowledge. Pellentese
+                                  turpis dignissim amet area ducation.
+                                </p>
+                                <ul>
+                                  <li>04:00 PM - 06:00 PM</li>
+                                  <li>Australia , Melborn</li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li
+                              class="wow bounceInUp"
+                              data-wow-duration="2s"
+                              data-wow-delay=".3s"
+                            >
+                              <div class="event-calender-wrapper">
+                                <div class="event-calender-holder">
+                                  <h3>26</h3>
+                                  <p>Jan</p>
+                                  <span>2017</span>
+                                </div>
+                              </div>
+                              <div class="event-content-holder">
+                                <h3>
+                                  <a href="single-event.html">Workshop On UI Design</a>
+                                </h3>
+                                <p>
+                                  Pellentese turpis dignissim amet area ducation process
+                                  facilitating Knowledge. Pellentese turpis dignissim amet
+                                  area ducation process facilitating Knowledge. Pellentese
+                                  turpis dignissim amet area ducation.
+                                </p>
+                                <ul>
+                                  <li>03:00 PM - 05:00 PM</li>
+                                  <li>Australia , Melborn</li>
+                                </ul>
+                              </div>
+                            </li>
+                          </ul> -->
+                          <ul class="event-wrapper">
+                            <% events.forEach((item)=> { %>
+                            <li
+                              class="wow bounceInUp"
+                              data-wow-duration="2s"
+                              data-wow-delay=".1s"
+                            >
+                              <div class="event-calender-wrapper">
+                                <div class="event-calender-holder">
+                                  <h3><%= item.date[0] %></h3>
+                                  <p><%= item.date[1] %></p>
+                                  <span><%= item.date[2] %></span>
+                                </div>
+                              </div>
+                              <div class="event-content-holder">
+                                <h3>
+                                  <a href="single-event.html"><%= item._doc.title %></a>
+                                </h3>
+                                <p><%= item._doc.description %></p>
+                                <ul>
+                                  <li><%= item._doc.time %></li>
+                                  <li><%= item._doc.venue %></li>
+                                </ul>
+                              </div>
+                            </li>
+                            <% }) %>
+                          </ul>
+                          <div class="event-btn-holder">
+                            <a href="#" class="view-all-primary-btn">View All</a>
+                          </div>
+                        </div>
+                      </div>    
                 </div>
             </div>
 
