@@ -5093,7 +5093,7 @@ ul.course-feature2 li:before {
   color: #fdc800;
 }
 .lecturers-page1-area {
-  padding: 100px 0;
+  padding-top: 100px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .lecturers-page1-area {
