@@ -9,7 +9,7 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  phone: {
+  mobileNumber: {
     type: String,
     required: true,
   },
@@ -21,7 +21,15 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  year: {
+  yearOfPassing: {
+    type: String,
+    required: true,
+  },
+  branch: {
+    type: String,
+    required: true,
+  },
+  rollNumber: {
     type: String,
     required: true,
   },
