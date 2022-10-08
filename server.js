@@ -1,7 +1,8 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
-const User = require("./model/User");
+const JoinCurrent = require("./model/JoinCurrent");
+const JoinAlumni = require("./model/JoinAlumni");
 const New = require("./model/New");
 const Event = require("./model/Event");
 const path = require("path");
@@ -64,7 +65,22 @@ const AdminBroOptions = {
       },
     },
     {
-      resource: User,
+      resource: JoinAlumni,
+      options: {
+        properties: {
+          ownerId: {
+            isVisible: { edit: false, show: true, list: true, filter: true },
+          },
+        },
+        actions: {
+          edit: { isAccessible: canEditEmp },
+          delete: { isAccessible: canEditEmp },
+          new: { isAccessible: canEditEmp },
+        },
+      },
+    },
+    {
+      resource: JoinCurrent,
       options: {
         properties: {
           ownerId: {
@@ -148,13 +164,13 @@ app.get("/", async (req, res) => {
   res.render("pages/index", { news, events });
 });
 
-app.post("/registration", async (req, res) => {
+app.post("/joincurrent", async (req, res) => {
   try {
-    const user = new User(req.body);
+    const user = new JoinCurrent(req.body);
     await user.save();
-    res.render("pages/registration");
+    res.send("OK");
   } catch (error) {
-    res.render("pages/registration");
+    res.render("ERROR");
   }
 });
 

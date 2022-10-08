@@ -15,7 +15,7 @@ const joinAlumniSchema = new mongoose.Schema({
   },
   batch: {
     type: String,
-     required:true,
+    required: true,
   },
   course: {
     type: String,
@@ -23,7 +23,7 @@ const joinAlumniSchema = new mongoose.Schema({
   },
   yearofpassing: {
     type: String,
-    required:true,
+    required: true,
   },
   branch: {
     type: String,
@@ -31,7 +31,7 @@ const joinAlumniSchema = new mongoose.Schema({
   },
   rollString: {
     type: String,
-    required:true,
+    required: true,
   },
   position: {
     type: String,
@@ -46,7 +46,6 @@ const joinAlumniSchema = new mongoose.Schema({
     // required:true,
   },
 
-
   higherstudies1: {
     type: String,
     // required:true,
@@ -59,7 +58,6 @@ const joinAlumniSchema = new mongoose.Schema({
     type: String,
     // required:true,
   },
-
 
   workexperience1: {
     type: String,
@@ -74,17 +72,12 @@ const joinAlumniSchema = new mongoose.Schema({
     // required:true,
   },
 
-
   currentorganisation: {
     type: String,
     // required:true,
   },
-  
-
-
-
 });
 
-const JOINALUMNI = mongoose.model("Event", joinAlumniSchema);
+const JoinAlumni = mongoose.model("Event", joinAlumniSchema);
 
-module.exports = JOINALUMNI;
+module.exports = JoinAlumni;
