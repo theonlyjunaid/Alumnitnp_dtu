@@ -16,7 +16,7 @@
 }
 .slide-track{
    display:flex;
-   width:calc(250px*8);  /* for 8 images*/
+   width:calc(250px*16);  /* for 16 images*/
    animation: scroll 40s linear infinite;
 }
 .slide-track:hover{
@@ -28,7 +28,7 @@
         transform:translateX(0);
     }
     100%{
-        transform:translateX(calc( -250px * 4)); /* for 8 images*/
+        transform:translateX(calc( -250px * 8)); /* for 16 images*/
     }
    }    
 .slide{
