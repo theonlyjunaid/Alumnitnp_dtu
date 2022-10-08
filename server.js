@@ -156,8 +156,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.get("/", async (req, res) => {
-  const news = await New.find({});
-  const eventsData = await Event.find({});
+  const news = await New.find({}).sort({ date: -1 });
+  const eventsData = await Event.find({}).sort({ date: -1 });
   const events = eventsData.map((item) => {
     return { ...item, date: item.date.split(" ") };
   });
@@ -171,6 +171,16 @@ app.post("/joincurrent", async (req, res) => {
     res.send("OK");
   } catch (error) {
     res.render("ERROR");
+  }
+});
+
+app.post("/joinalumni", async (req, res) => {
+  try {
+    const user = new JoinAlumni(req.body);
+    await user.save();
+    res.send("OK");
+  } catch (error) {
+    res.send("ERROR");
   }
 });
 

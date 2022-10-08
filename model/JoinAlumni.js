@@ -9,7 +9,7 @@ const joinAlumniSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  phone: {
+  mobileNumber: {
     type: String,
     required: true,
   },
@@ -21,7 +21,7 @@ const joinAlumniSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  yearofpassing: {
+  yearOfPassing: {
     type: String,
     required: true,
   },
@@ -29,7 +29,7 @@ const joinAlumniSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  rollString: {
+  rollNumber: {
     type: String,
     required: true,
   },
@@ -41,7 +41,7 @@ const joinAlumniSchema = new mongoose.Schema({
     type: String,
     // required: true,
   },
-  achievement: {
+  achievements: {
     type: String,
     // required:true,
   },
@@ -50,34 +50,34 @@ const joinAlumniSchema = new mongoose.Schema({
     type: String,
     // required:true,
   },
-  higherstudies2: {
+  higherStudies2: {
     type: String,
     // required: true,
   },
-  higherstudies3: {
+  higherStudies3: {
     type: String,
     // required:true,
   },
 
-  workexperience1: {
+  workExperience1: {
     type: String,
     // required:true,
   },
-  workexperience2: {
+  workExperience2: {
     type: String,
     // required: true,
   },
-  workexperience3: {
+  workExperience3: {
     type: String,
     // required:true,
   },
 
-  currentorganisation: {
+  currentOrganisation: {
     type: String,
     // required:true,
   },
 });
 
-const JoinAlumni = mongoose.model("Event", joinAlumniSchema);
+const JoinAlumni = mongoose.model("JoinAlumni", joinAlumniSchema);
 
 module.exports = JoinAlumni;

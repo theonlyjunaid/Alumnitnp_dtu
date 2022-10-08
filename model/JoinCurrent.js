@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const userSchema = new mongoose.Schema({
+const joinCurrentSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true,
@@ -35,6 +35,6 @@ const userSchema = new mongoose.Schema({
   },
 });
 
-const User = mongoose.model("User", userSchema);
+const JoinCurrent = mongoose.model("JoinCurrent", joinCurrentSchema);
 
-module.exports = User;
+module.exports = JoinCurrent;
