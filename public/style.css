@@ -160,7 +160,7 @@ ul {
   .container,
   .container-md,
   .container-sm {
-    max-width: 750px;
+    max-width: 100%;
   }
 }
 @media (min-width: 992px) {
@@ -168,10 +168,10 @@ ul {
   .container-lg,
   .container-md,
   .container-sm {
-    max-width: 970px;
+    max-width: 100%;
   }
 }
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
   .container,
   .container-lg,
   .container-md,
@@ -179,7 +179,7 @@ ul {
   .container-xl {
     max-width: 1164px;
   }
-}
+} */
 #wrapper {
   overflow: hidden;
   -webkit-transition: all 0.5s ease-out;
@@ -502,7 +502,7 @@ ul {
   text-transform: capitalize;
   text-align: left;
   font-weight: 500;
-  margin-bottom: 45px;
+  /* margin-bottom: 45px; */
   color: #002147;
 }
 @media only screen and (max-width: 767px) {
@@ -2789,7 +2789,7 @@ nav#desktop-nav li.has-child-menu:hover ul.thired-level {
 .slider1-area .nivo-directionNav a.nivo-prevNav {
   left: 8px;
   width: 50px;
-  height: 50px;
+  /* height: 50px; */
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.5);
   -webkit-transition: all 0.5s ease-out;
@@ -2809,7 +2809,7 @@ nav#desktop-nav li.has-child-menu:hover ul.thired-level {
   text-align: center;
   top: 18px;
   z-index: 9;
-  height: 10px;
+  /* height: 10px; */
   width: 10px;
   left: 19px;
   -webkit-transition: all 0.5s ease-out;
@@ -2837,7 +2837,7 @@ nav#desktop-nav li.has-child-menu:hover ul.thired-level {
 .slider1-area .nivo-directionNav a.nivo-nextNav {
   right: 8px;
   width: 50px;
-  height: 50px;
+  /* height: 50px; */
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.5);
   -webkit-transition: all 0.5s ease-out;
@@ -4714,8 +4714,8 @@ nav#desktop-nav li.has-child-menu:hover ul.thired-level {
   margin-bottom: 20px;
 }
 .lecturers-img-wrapper img {
-  width: 100%;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   -webkit-transition: all 1s ease-out;
   -moz-transition: all 1s ease-out;
   -ms-transition: all 1s ease-out;
@@ -6705,7 +6705,7 @@ ul.course-feature2 li:before {
   }
 }
 .event-inner-area .event-wrapper > li {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   padding: 20px;
   background: #FFFFFF;
   display: -webkit-box;
@@ -6738,10 +6738,10 @@ ul.course-feature2 li:before {
   position: relative;
   padding-top: 20px;
   text-align: center;
-  width: 100px;
+  width: 50px;
   background: #fdc800;
 }
-.event-inner-area .event-wrapper > li .event-calender-holder:before {
+/* .event-inner-area .event-wrapper > li .event-calender-holder:before {
   content: "\f111";
   position: absolute;
   left: 10px;
@@ -6749,8 +6749,8 @@ ul.course-feature2 li:before {
   color: #002147;
   font-size: 14px;
   font-family: FontAwesome;
-}
-.event-inner-area .event-wrapper > li .event-calender-holder:after {
+} */
+/* .event-inner-area .event-wrapper > li .event-calender-holder:after {
   content: "\f111";
   position: absolute;
   right: 10px;
@@ -6758,7 +6758,7 @@ ul.course-feature2 li:before {
   color: #002147;
   font-size: 14px;
   font-family: FontAwesome;
-}
+} */
 .event-inner-area .event-wrapper > li .event-calender-holder h3 {
   font-size: 24px;
   color: #002147;

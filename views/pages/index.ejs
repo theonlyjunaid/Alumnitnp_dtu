@@ -58,18 +58,9 @@
   </head>
 
   <body>
-    <!--[if lt IE 8]>
-      <p class="browserupgrade">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
-        your experience.
-      </p>
-    <![endif]-->
-    <!-- Add your site or application content here -->
-    <!-- Preloader Start Here -->
+    
     <div id="preloader"></div>
-    <!-- Preloader End Here -->
-    <!-- Main Body Area Start Here -->
+ 
     <div id="wrapper">
       <!-- Header Area Start Here -->
       <header>
@@ -157,95 +148,52 @@
             </div>
           </div>
         </div>
-        <!-- Mobile Menu Area Start -->
-        <!-- <div class="mobile-menu-area">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="mobile-menu">
-                                <nav id="dropdown">
-                                    <ul>
-                                        <li><a href="#">Home</a>
-                                            <ul>
-                                                <li><a href="index.html">Home 1</a></li>
-                                               
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">Pages</a>
-                                            <ul>
-                                                <li><a href="about1.html">About 1</a></li>
-                                               
-                                                <li><a href="lecturers1.html">lecturers 1</a></li>
-                                                <li><a href="single-lecturers.html">lecturers Details</a></li>
-                                                <li><a href="pricing1.html">Pricing Plan 1</a></li>
-                                                <li><a href="shop1.html">Shop 1</a></li>
-                                                <li><a href="single-shop.html">Shop Details</a></li>
-                                                <li><a href="faq.html">Faq</a></li>
-                                                <li><a href="404.html">404 Error</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">Courses</a>
-                                            <ul>
-                                                <li><a href="courses1.html">Courses 1</a></li>
-                                               
-                                                <li><a href="single-courses1.html">Course Details 1</a></li>
-                                              
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">Research</a>
-                                            <ul>
-                                                <li><a href="research1.html">Research 1</a></li>
-                                               
-                                                <li><a href="single-research.html">Research Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">News</a>
-                                            <ul>
-                                                <li class="has-child-menu"><a href="#">News</a>
-                                                    <ul class="thired-level">
-                                                        <li><a href="news1.html">News 1</a></li>
-                                                        <li><a href="single-news.html">News Details</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="has-child-menu"><a href="#">Event</a>
-                                                    <ul class="thired-level">
-                                                        <li><a href="event.html">Event</a></li>
-                                                        <li><a href="single-event.html">Event Details</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">Gallery</a>
-                                            <ul>
-                                                <li><a href="gallery1.html">Gallery 1</a></li>
-                                                <li><a href="gallery2.html">Gallery 2</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">Contact</a>
-                                            <ul>
-                                                <li><a href="contact1.html">Contact 1</a></li>
-                                                <li><a href="contact2.html">Contact 2</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-        <!-- Mobile Menu Area End -->
+       
       </header>
-      <!-- Header Area End Here -->
-      <!-- Slider 1 Area Start Here -->
+     
 
       <section style="display: flex">
-        <div class="slider1-area overlay-default index1" style="width: 70%">
+        <div
+          style="
+            width: 25%;
+            margin-top: 82px;
+            display: flex;
+            align-items: center;
+            background-color: #f5f5f5;
+          "
+          class="event-inner-area"
+        >
+          <ul class="event-wrapper">
+            <h2 class="title-default-left" style="text-align: center">
+              Upcoming Event
+            </h2>
+            <li>
+              <div class="event-calender-wrapper">
+                <div class="event-calender-holder">
+                  <h3><%= events[0].date[0] %></h3>
+                  <p><%= events[0].date[1] %></p>
+                  <span><%= events[0].date[2] %></span>
+                </div>
+              </div>
+              <div class="event-content-holder">
+                <h3>
+                  <a href="single-event.html"><%= events[0]._doc.title %></a>
+                </h3>
+                <p><%= events[0]._doc.description %></p>
+                <ul>
+                  <li><%= events[0]._doc.time %></li>
+                  <li><%= events[0]._doc.venue %></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="slider1-area overlay-default index1" style="width: 60%; height: 400px;">
           <div class="bend niceties preview-1">
             <div
               id="ensign-nivoslider-3"
               class="slides"
-              style="height: 580px; align-items: center"
+              style=" align-items: center"
             >
               <img
                 src="img/slider/images2/971435_560604467348068_1180735936_n.jpg"
@@ -266,15 +214,13 @@
             <div id="slider-direction-1" class="t-cn slider-direction">
               <div class="slider-content s-tb slide-1">
                 <div class="title-container s-tb-c">
-                  <div class="title1">ALumni Forum DTU</div>
+                  <div class="title1">Alumni Forum DTU</div>
                   <p>
                     Emply dummy text of the printing and typesetting industry
                     orem Ipsum has been the industry's standard <br />dummy text
                     ever sinceprinting and typesetting industry.
                   </p>
-                  <!-- <div class="slider-btn-area">
-                                <a href="#" class="default-big-btn">Start a Course</a>
-                            </div> -->
+                
                 </div>
               </div>
             </div>
@@ -291,21 +237,13 @@
               </div>
             </div>
 
-            <!-- <div id="slider-direction-3" class="t-cn slider-direction">
-                    <div class="slider-content s-tb slide-3">
-                        <div class="title-container s-tb-c">
-                            <div class="title1">Best Education Into PHP</div>
-                            <p>Emply dummy text of the printing and typesetting industry orem Ipsum has been the industry's standard
-                                <br>dummy text ever sinceprinting and typesetting industry. </p>
-                            
-                        </div>
-                    </div>
-                </div> -->
+          
           </div>
         </div>
         <div
           style="
-            width: 30%;
+            width: 25%;
+            margin-top: 82px;
             display: flex;
             align-items: center;
             background-color: #f5f5f5;
@@ -338,79 +276,15 @@
           </ul>
         </div>
       </section>
-      <!-- Slider 1 Area End Here -->
-      <!-- Service 1 Area Start Here -->
-      <!-- <div class="service1-area">
-        <div class="service1-inner-area">
-          <div class="container">
-            <div class="row service1-wrapper">
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 service-box1">
-                <div class="service-box-content">
-                  <h3><a href="#">Scholarship Facility</a></h3>
-                  <p>Eimply dummy text printing ypese tting industry.</p>
-                </div>
-                <div class="service-box-icon">
-                  <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                </div>
-              </div>
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 service-box1">
-                <div class="service-box-content">
-                  <h3><a href="#">Skilled Lecturers</a></h3>
-                  <p>Eimply dummy text printing ypese tting industry.</p>
-                </div>
-                <div class="service-box-icon">
-                  <i class="fa fa-user" aria-hidden="true"></i>
-                </div>
-              </div>
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 service-box1">
-                <div class="service-box-content">
-                  <h3><a href="#">Book Library & Store</a></h3>
-                  <p>Eimply dummy text printing ypese tting industry.</p>
-                </div>
-                <div class="service-box-icon">
-                  <i class="fa fa-book" aria-hidden="true"></i>
-                </div>
-              </div>
-            </div>
-          </div>
+      
         </div>
-      </div> -->
-      <!-- Service 1 Area End Here -->
-      <!-- About 1 Area Start Here -->
+      </div>
 
-      <!-- <div class="about1-area">
+      <!-- <div class="lecturers-area" style="padding-top: 10px;">
         <div class="container">
-          <h1
-            class="about-title wow fadeIn"
-            data-wow-duration="1s"
-            data-wow-delay=".2s"
-          >
-            Student Alumni Cell
-          </h1>
-          <p
-            class="about-sub-title wow fadeIn"
-            data-wow-duration="1s"
-            data-wow-delay=".2s"
-          >
-            Student's Alumni Cell (SAC) DTU, is a student body that was formed
-            with the aim to brigde the gap between the alumni and current
-            students/University.This body will be responsible for conduction of
-            all the events related to alumni and students in the University.It
-            will also act as the Alma mater's representative for the alumni that
-            will be available to help them out for any kind of
-            academic/administrative work in the University.
-          </p>
-          <!-- <div class="about-img-holder wow fadeIn" data-wow-duration="2s" data-wow-delay=".2s">
-                    <img src="img/about/1.jpg" alt="about" class="img-responsive" />
-                </div> -->
+          <h2 class="title-default-center">Our Alumni</h2>
         </div>
-      </div> -->
-
-      <div class="lecturers-area">
-        <div class="container">
-          <h2 class="title-default-left">Our Alumni</h2>
-        </div>
-        <div class="container">
+        <div class="container" style="width: 100%;">
           <div
             class="rc-carousel"
             data-loop="true"
@@ -451,28 +325,7 @@
                 <div class="lecturers-content-wrapper">
                   <h3 class="item-title"><a href="#">Vinod Dham</a></h3>
                   <span class="item-designation">Lorem, ipsum dolor.</span>
-                  <ul class="lecturers-social">
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-envelope-o" aria-hidden="true"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-linkedin" aria-hidden="true"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-twitter" aria-hidden="true"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-facebook" aria-hidden="true"></i
-                      ></a>
-                    </li>
-                  </ul>
+                  
                 </div>
               </div>
             </div>
@@ -489,28 +342,7 @@
                 <div class="lecturers-content-wrapper">
                   <h3 class="item-title"><a href="#">Durga D aggarwal</a></h3>
                   <span class="item-designation">Lorem, ipsum dolor.</span>
-                  <ul class="lecturers-social">
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-envelope-o" aria-hidden="true"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-linkedin" aria-hidden="true"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-twitter" aria-hidden="true"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-facebook" aria-hidden="true"></i
-                      ></a>
-                    </li>
-                  </ul>
+                  
                 </div>
               </div>
             </div>
@@ -529,28 +361,7 @@
                     <a href="#">Vijay Shekhar Sharma</a>
                   </h3>
                   <span class="item-designation">Lorem, ipsum dolor.</span>
-                  <ul class="lecturers-social">
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-envelope-o" aria-hidden="true"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-linkedin" aria-hidden="true"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-twitter" aria-hidden="true"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-facebook" aria-hidden="true"></i
-                      ></a>
-                    </li>
-                  </ul>
+                  
                 </div>
               </div>
             </div>
@@ -567,28 +378,7 @@
                 <div class="lecturers-content-wrapper">
                   <h3 class="item-title"><a href="#">Raj Soin</a></h3>
                   <span class="item-designation">Lorem, ipsum dolor.</span>
-                  <ul class="lecturers-social">
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-envelope-o" aria-hidden="true"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-linkedin" aria-hidden="true"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-twitter" aria-hidden="true"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-facebook" aria-hidden="true"></i
-                      ></a>
-                    </li>
-                  </ul>
+                 
                 </div>
               </div>
             </div>
@@ -605,28 +395,7 @@
                 <div class="lecturers-content-wrapper">
                   <h3 class="item-title"><a href="#">Yogi Goswami</a></h3>
                   <span class="item-designation">Lorem, ipsum dolor.</span>
-                  <ul class="lecturers-social">
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-envelope-o" aria-hidden="true"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-linkedin" aria-hidden="true"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-twitter" aria-hidden="true"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-facebook" aria-hidden="true"></i
-                      ></a>
-                    </li>
-                  </ul>
+                  
                 </div>
               </div>
             </div>
@@ -643,34 +412,52 @@
                 <div class="lecturers-content-wrapper">
                   <h3 class="item-title"><a href="#">Karnal Singh</a></h3>
                   <span class="item-designation">Lorem, ipsum dolor.</span>
-                  <ul class="lecturers-social">
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-envelope-o" aria-hidden="true"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-linkedin" aria-hidden="true"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-twitter" aria-hidden="true"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-facebook" aria-hidden="true"></i
-                      ></a>
-                    </li>
-                  </ul>
+                  
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div> -->
+      
+    <section style="display: flex; margin-top: 50px;">
+      <div class="card" style="width: 18rem; margin: 0 30px;">
+        <img src="Alumni(DTU)/Vinod Dham.png" class="card-img-top" alt="..." style="height: 200px;">
+        <div class="card-body">
+          <h5 class="card-title">Vinod Dham</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
       </div>
+      <div class="card" style="width: 18rem; margin: 0 30px;">
+        <img src="Alumni(DTU)/Durga D aggarwal.png" class="card-img-top" alt="..."style="height: 200px;">
+        <div class="card-body">
+          <h5 class="card-title">Durga D aggarwal</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin: 0 30px;">
+        <img src="Alumni(DTU)/Raj Soin.jpg" class="card-img-top" alt="..."style="height: 200px;">
+        <div class="card-body">
+          <h5 class="card-title">Raj Soin</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin: 0 30px;">
+        <img src="Alumni(DTU)/VSS.png" class="card-img-top" alt="..."style="height: 200px;">
+        <div class="card-body">
+          <h5 class="card-title">Vijay Shekhar Sharma</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; margin: 0 30px;">
+        <img src="Alumni(DTU)/Yogi Goswami.jpg" class="card-img-top" alt="..." style="height: 200px;">
+        <div class="card-body">
+          <h5 class="card-title">Yogi Goswami</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      </section>
+
 
       <div class="news-event-area">
         <div class="container">
