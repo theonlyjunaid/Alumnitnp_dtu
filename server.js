@@ -152,9 +152,9 @@ app.post("/registration", async (req, res) => {
   try {
     const user = new User(req.body);
     await user.save();
-    res.sendFile(path.join(__dirname, "public/registration.html"));
+    res.render("pages/registration");
   } catch (error) {
-    res.send("No");
+    res.render("pages/registration");
   }
 });
 
