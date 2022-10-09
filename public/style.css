@@ -2253,7 +2253,7 @@ nav#desktop-nav li.has-child-menu:hover ul.thired-level {
   transition: all 1s ease-out;
 }
 #header1 {
-  position: fixed;
+  /* position: absolute; */
   width: 100%;
   top: 0;
   z-index: 100;
@@ -2262,9 +2262,9 @@ nav#desktop-nav li.has-child-menu:hover ul.thired-level {
   height: 70px;
   width: 70px;
 }
-.slider1-area.index1 {
+/* .slider1-area.index1 {
   margin-top: 82px;
-}
+} */
 
 @media only screen and (max-width: 767px) {
   
