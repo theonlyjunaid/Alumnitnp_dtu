@@ -4723,10 +4723,10 @@ nav#desktop-nav li.has-child-menu:hover ul.thired-level {
   -o-transition: all 1s ease-out;
   transition: all 1s ease-out;
 }
-.lecturers-img-wrapper:hover img {
+/* .lecturers-img-wrapper:hover img {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
-}
+} */
 .lecturers-content-wrapper {
   text-align: center;
 }
