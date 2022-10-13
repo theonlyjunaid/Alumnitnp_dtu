@@ -4715,8 +4715,8 @@ nav#desktop-nav li.has-child-menu:hover ul.thired-level {
   margin-bottom: 20px;
 }
 .lecturers-img-wrapper img {
-  width: 100%;
-  height: 300px;
+  width: 63%;
+  height: 190px;
   -webkit-transition: all 1s ease-out;
   -moz-transition: all 1s ease-out;
   -ms-transition: all 1s ease-out;
@@ -4731,7 +4731,7 @@ nav#desktop-nav li.has-child-menu:hover ul.thired-level {
   text-align: center;
 }
 .lecturers-content-wrapper .item-title {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 500;
   margin-bottom: 5px;
   text-transform: capitalize;
@@ -4748,6 +4748,7 @@ nav#desktop-nav li.has-child-menu:hover ul.thired-level {
   color: #fdc800;
 }
 .lecturers-content-wrapper .item-designation {
+  font-size: 14px;
   margin-bottom: 20px;
   display: block;
 }
