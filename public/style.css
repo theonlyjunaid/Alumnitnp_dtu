@@ -10279,3 +10279,11 @@ ul.course-feature2 li:before {
   -moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
+
+.btn1{
+  margin-top: 20px;
+}
+.nav3{
+  position: relative;
+  left: 10rem;
+}
