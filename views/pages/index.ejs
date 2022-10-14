@@ -14,7 +14,7 @@
     />
     <!-- Normalize CSS -->
     <link rel="stylesheet" href="/css/normalize.css" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./index.css" />
     <!-- Main CSS -->
     <link rel="stylesheet" href="/css/main.css" />
     <!-- Bootstrap CSS -->
@@ -72,6 +72,7 @@
     <script src="/js/modernizr-2.8.3.min.js"></script>
   </head>
   <body>
+   
     <header>
       <div class="row container nav3">
         <div class="navbar-brand topnav">
@@ -242,13 +243,30 @@
             </li>
           </ul>
         </div>
+        
       </nav>
+      
+      
+      
     </header>
 
 
-    <section>.</section>
-
+    <section>
+      <nav class="navbar navbar-expand-md navbar-warning bg-warning ">
+       
+          <marquee width="100%" direction="right" height="25px" scrollamount="12">
+            <a href="single-event.html">
+             " <%= news[0]._doc.title %>"  <%= news[0]._doc.description %> 
+            </a>
+          </marquee>
+       
+        
+      </nav>
+    </section>
+    
+    
     <div id="wrapper">
+      
       <section style="display: flex">
         <div
           style="
@@ -260,6 +278,7 @@
           "
           class="event-inner-area"
         >
+        
           <div class="event-wrapper" style="width: 100%">
             <li>
               <div class="event-content-holder" style="width: 100%">
