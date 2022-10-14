@@ -184,6 +184,8 @@ app.post("/joinalumni", async (req, res) => {
   }
 });
 
-app.listen(3000, (req, res) => {
+const port = process.env.PORT || 80;
+
+app.listen(port, (req, res) => {
   console.log("Server is up at 3000");
 });

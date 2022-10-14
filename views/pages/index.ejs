@@ -25,8 +25,8 @@
     <link rel="stylesheet" href="/css/font-awesome.min.css" />
     <!-- Owl Caousel CSS -->
     <link rel="stylesheet" href="vendor/OwlCarousel/owl.carousel.min.css" />
-    <link rel="stylesheet" href="index.css">
-    
+    <link rel="stylesheet" href="index.css" />
+
     <link
       rel="stylesheet"
       href="/vendor/OwlCarousel/owl.theme.default.min.css"
@@ -51,7 +51,12 @@
       type="text/css"
       media="screen"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <!-- Datetime Picker Style CSS -->
     <link rel="stylesheet" href="/css/jquery.datetimepicker.css" />
     <!-- Magic popup CSS -->
@@ -62,12 +67,11 @@
     <link rel="stylesheet" href="/css/reImageGrid.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="/public/navbar/index.css">
+    <link rel="stylesheet" href="/public/navbar/index.css" />
     <!-- Modernizr Js -->
     <script src="/js/modernizr-2.8.3.min.js"></script>
   </head>
   <body>
-    
     <header>
     <div class="row container nav3 ">
       <div class="navbar-brand topnav " href="#">
@@ -132,7 +136,7 @@
           <li class="nav-item active navi">
             <a
               class="nav-link "
-              href="/alumni.html"
+              href="/lecturers1.html"
               
             >
             Notable Alumni
@@ -217,78 +221,186 @@
           
         </ul>
 
-        
-            
-        
-      </div>
-    </nav>
-  </header>
-
-       
-
-
-
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-    <ul class="navbar-nav  ">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="#">Alumni</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Wall Of Donors</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Join Us
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+        <div class="ml-auto disp">
+          <button type="button" class="btn btn-primary">
+            <a style="color: white" href="/donation.html">Donate</a>
+          </button>
         </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Gallery</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
-      </li>
-      
-    </ul>
-    
-  </div>
-</nav>
+      </div>
 
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <!-- One of the primary actions on mobile is to call a business - This displays a phone button on mobile only -->
+        <div class="navbar-toggler-right">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
 
+        <div class="collapse navbar-collapse flex-column" id="navbar">
+          <ul class="navbar-nav w-100 justify-content-center px-3">
+            <li class="nav-item active navi">
+              <a class="nav-link" href="/"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item dropdown navi">
+              <a
+                class="nav-link dropdown-toggle"
+                href="/Gallery_memories.html"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Administration
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="/VC.html">Vice-Chancellor</a>
+                <a class="dropdown-item" href="/dean.html">Dean</a>
+                <a class="dropdown-item" href="/AssDean.html">Associate Dean</a>
+                <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+              </div>
+            </li>
 
+            <li class="nav-item active navi">
+              <a class="nav-link" href="/lecturers1.html"> Notable Alumni </a>
+            </li>
+            <li class="nav-item dropdown navi">
+              <a
+                class="nav-link dropdown-toggle"
+                href="/donation.html"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Donations
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="/lecturers1.html"
+                  >Wall of Donars</a
+                >
+                <a class="dropdown-item" href="/whyDonate.html">Why Donate</a>
+                <a class="dropdown-item" href="/howDonate">How to Donate</a>
+                <ol
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                  style="
+                    text-align: center;
+                    background-color: #343a40;
+                    color: #fff;
+                  "
+                >
+                  <div>Donation Opportunities</div>
+                  <div
+                    style="height: 1px; width: 100%; background-color: #343a40"
+                  ></div>
+                  <div style="background-color: #fff">
+                    <a class="dropdown-item" href="/namingOp.html"
+                      >Naming Opportunities</a
+                    >
+                    <a class="dropdown-item" href="/medalAndScholar.html"
+                      >Medal and Scholarship</a
+                    >
+                    <a class="dropdown-item" href="/contributionFund.html"
+                      >Contribution Fund</a
+                    >
+                  </div>
+                </ol>
+              </div>
+            </li>
+            <li class="nav-item dropdown navi">
+              <a
+                class="nav-link dropdown-toggle"
+                href="/registration1.html"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Join Us
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="/alumni.html">Alumni</a>
+                <a class="dropdown-item" href="/registration1.html"
+                  >Current Student</a
+                >
+                <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+              </div>
+            </li>
+            <li class="nav-item dropdown navi">
+              <a
+                class="nav-link dropdown-toggle"
+                href="/Gallery_memories.html"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Gallery
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="/Gallery_memories.html"
+                  >Memories</a
+                >
+                <a class="dropdown-item" href="/Gallery_events.html">Events</a>
+                <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+              </div>
+            </li>
+            <li class="nav-item navi">
+              <a class="nav-link" href="/contact1.html"> Contact Us </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-<div id="wrapper">
+    <section>.</section>
 
+    <div id="wrapper">
       <section style="display: flex">
         <div
           style="
             width: 25%;
             height: auto;
-            
+
             display: flex;
             background-color: #f5f5f5;
           "
           class="event-inner-area"
         >
-          <div class="event-wrapper" style="width: 100%;" >
-            
+          <div class="event-wrapper" style="width: 100%">
             <li>
-              
-              <div class="event-content-holder" style="width: 100%;">
-                <h2 class="title-default-center" style="margin-bottom: 0;" >
+              <div class="event-content-holder" style="width: 100%">
+                <h2 class="title-default-center" style="margin-bottom: 0">
                   NEWS
                 </h2>
                 <h3>
@@ -304,25 +416,30 @@
             <!-- <h2 class="title-default-center" >
               DONATIONS
             </h2> -->
-              <div class="card" style="margin-top: -1rem;">
-                <div class="card-body" style="text-align: center;">
-                  <h2 class="title-default-center" style="margin-bottom: 0;" >
-                    DONATIONS
-                  </h2>
-                  <h5 class="card-title">Raj Soin</h5>
-                  <p class="card-text">Pledged 5 Crore, Received Approximately 4.45 Crore</p>
-                  <h5 class="card-title">Prof. D Yog Goswami </h5>
-                  <p class="card-text">Received $50,000</p>
-                </div>
+            <div class="card" style="margin-top: -1rem">
+              <div class="card-body" style="text-align: center">
+                <h2 class="title-default-center" style="margin-bottom: 0">
+                  DONATIONS
+                </h2>
+                <h5 class="card-title">Raj Soin</h5>
+                <p class="card-text">
+                  Pledged 5 Crore, Received Approximately 4.45 Crore
+                </p>
+                <h5 class="card-title">Prof. D Yog Goswami</h5>
+                <p class="card-text">Received $50,000</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="slider1-area overlay-default index1" style="width: 60%; height: auto">
+        <div
+          class="slider1-area overlay-default index1"
+          style="width: 60%; height: auto"
+        >
           <div class="bend niceties preview-1">
             <div
               id="ensign-nivoslider-3"
               class="slides"
-              style=" align-items: center"
+              style="align-items: center"
             >
               <img
                 src="img/slider/images2/971435_560604467348068_1180735936_n.jpg"
@@ -350,7 +467,6 @@
                     orem Ipsum has been the industry's standard <br />dummy text
                     ever sinceprinting and typesetting industry.
                   </p>
-                
                 </div>
               </div>
             </div>
@@ -366,15 +482,13 @@
                 </div>
               </div>
             </div>
-
-          
           </div>
         </div>
         <div
           style="
             width: 25%;
             height: auto;
-            
+
             display: flex;
             background-color: #f5f5f5;
           "
@@ -406,51 +520,72 @@
           </ul>
         </div>
       </section>
-      
-        
 
-      
-      
-      <h2 class="title-default-center" style="margin-top: 10px;">Distinguished Alumni</h2>
-    <section style="display: flex; margin:0 0 40px 0;">
-     
-      <div class="card" style="width: 18rem; margin: 0 30px;">
-        <img src="Alumni(DTU)/Vinod Dham.png" class="card-img-top" alt="..." style="height: 250px;">
-        <div class="card-body">
-          <h5 class="card-title">Vinod Dham</h5>
-          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+      <h2 class="title-default-center" style="margin-top: 10px">
+        Distinguished Alumni
+      </h2>
+      <section style="display: flex; margin: 0 0 40px 0">
+        <div class="card" style="width: 18rem; margin: 0 30px">
+          <img
+            src="Alumni(DTU)/Vinod Dham.png"
+            class="card-img-top"
+            alt="..."
+            style="height: 250px"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Vinod Dham</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+          </div>
         </div>
-      </div>
-      <div class="card" style="width: 18rem; margin: 0 30px;">
-        <img src="Alumni(DTU)/Durga D aggarwal.png" class="card-img-top" alt="..."style="height: 250px;">
-        <div class="card-body">
-          <h5 class="card-title">Durga D Aggarwal</h5>
-          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+        <div class="card" style="width: 18rem; margin: 0 30px">
+          <img
+            src="Alumni(DTU)/Durga D aggarwal.png"
+            class="card-img-top"
+            alt="..."
+            style="height: 250px"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Durga D Aggarwal</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+          </div>
         </div>
-      </div>
-      <div class="card" style="width: 18rem; margin: 0 30px;">
-        <img src="Alumni(DTU)/Raj Soin.jpg" class="card-img-top" alt="..."style="height: 250px;">
-        <div class="card-body">
-          <h5 class="card-title">Raj Soin</h5>
-          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+        <div class="card" style="width: 18rem; margin: 0 30px">
+          <img
+            src="Alumni(DTU)/Raj Soin.jpg"
+            class="card-img-top"
+            alt="..."
+            style="height: 250px"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Raj Soin</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+          </div>
         </div>
-      </div>
-      <div class="card" style="width: 18rem; margin: 0 30px;">
-        <img src="Alumni(DTU)/VSS.png" class="card-img-top" alt="..."style="height: 250px;">
-        <div class="card-body">
-          <h5 class="card-title">Vijay Shekhar Sharma</h5>
-          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+        <div class="card" style="width: 18rem; margin: 0 30px">
+          <img
+            src="Alumni(DTU)/VSS.png"
+            class="card-img-top"
+            alt="..."
+            style="height: 250px"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Vijay Shekhar Sharma</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+          </div>
         </div>
-      </div>
-      <div class="card" style="width: 18rem; margin: 0 30px;">
-        <img src="Alumni(DTU)/Yogi Goswami.jpg" class="card-img-top" alt="..." style="height: 250px;">
-        <div class="card-body">
-          <h5 class="card-title">Yogi Goswami</h5>
-          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+        <div class="card" style="width: 18rem; margin: 0 30px">
+          <img
+            src="Alumni(DTU)/Yogi Goswami.jpg"
+            class="card-img-top"
+            alt="..."
+            style="height: 250px"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Yogi Goswami</h5>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+          </div>
         </div>
-      </div>
       </section>
-
 
       <div class="news-event-area">
         <div class="container">
@@ -575,52 +710,63 @@
         </div>
       </div>
 
-    
-
-</div>
-    <footer id="footer-id">
+      <footer id="footer-id">
         <div class="footer-area" style="background-color: black">
-          <div class="container" style="max-width: 100%;">
+          <div class="container" style="max-width: 100%">
             <div class="row">
-              <div class="col-sm-12 col-md-6" style="display: flex; align-items: center;">
+              <div
+                class="col-sm-12 col-md-6"
+                style="display: flex; align-items: center"
+              >
                 <div>
-                  <section style="display: flex; align-items: center; padding-bottom: 10px;">
-                <div class="" style="margin: 0 50px;">
-                  <a
-                    href="https://www.linkedin.com/in/prof-rajesh-rohilla-7b25814/"
-                    ><img
-                      class="img-fot1 " style="width: 80px ;"
-                      src="/img/footer/rajeshrohilla.jpg"
-                      alt="logo"
-                  /></a>
-                   </div>
-                  <div class="" >
-                    <center>Prof Rajesh Rohilla, Dean (Alumni Affairs)</center>
-                    <p></p>
-                     <!-- Dean (Alumni Affairs), -->
-                    <br />
-                    
-                    <!-- Email: rajesh@dce.ac.in -->
-                  </div>
+                  <section
+                    style="
+                      display: flex;
+                      align-items: center;
+                      padding-bottom: 10px;
+                    "
+                  >
+                    <div class="" style="margin: 0 50px">
+                      <a
+                        href="https://www.linkedin.com/in/prof-rajesh-rohilla-7b25814/"
+                        ><img
+                          class="img-fot1"
+                          style="width: 80px"
+                          src="/img/footer/rajeshrohilla.jpg"
+                          alt="logo"
+                      /></a>
+                    </div>
+                    <div class="">
+                      <center>
+                        Prof Rajesh Rohilla, Dean (Alumni Affairs)
+                      </center>
+                      <p></p>
+                      <!-- Dean (Alumni Affairs), -->
+                      <br />
+
+                      <!-- Email: rajesh@dce.ac.in -->
+                    </div>
                   </section>
-                  <section style="display: flex;align-items: center;">
-                  <div class="" style="margin: 0 50px;">
-                  <a
-                    href="https://in.linkedin.com/in/yasha-hasija-a10b3941"
-                    ><img
-                      class="img-fot1 " style="width: 80px;"
-                      src="/img/footer/yashahasija.jpg"
-                      alt="logo"
-                  /></a>
-                   </div>
-                  <div class="" style="text-align: center; ">
-                    <center>Dr Yasha Hasija , Associate Dean (Alumni Affairs)</center>
-                    <p></p>
-                     <!-- Associate Dean (Alumni Affairs), -->
-                    <br />
-                    
-                    <!-- Email: rajesh@dce.ac.in -->
-                  </div>
+                  <section style="display: flex; align-items: center">
+                    <div class="" style="margin: 0 50px">
+                      <a href="https://in.linkedin.com/in/yasha-hasija-a10b3941"
+                        ><img
+                          class="img-fot1"
+                          style="width: 80px"
+                          src="/img/footer/yashahasija.jpg"
+                          alt="logo"
+                      /></a>
+                    </div>
+                    <div class="" style="text-align: center">
+                      <center>
+                        Dr Yasha Hasija , Associate Dean (Alumni Affairs)
+                      </center>
+                      <p></p>
+                      <!-- Associate Dean (Alumni Affairs), -->
+                      <br />
+
+                      <!-- Email: rajesh@dce.ac.in -->
+                    </div>
                   </section>
                 </div>
               </div>
@@ -688,28 +834,24 @@
 
         <div class="footer-bot">
           <div class="row">
-            <div class="">
-              <center>
-                <p class="copyright-text">
-                  Copyright &copy; 2022 All Rights Reserved by
-                  <a href="#">ALUMNI DTU</a>.
-                </p>
-              </center>
+            <div style="display: flex; justify-content: center; width: 100vw">
+              <p class="copyright-text">
+                Copyright &copy; 2022 All Rights Reserved by
+                <a href="#">ALUMNI DTU</a>.
+              </p>
             </div>
-            
           </div>
         </div>
-
-        
       </footer>
-      
+    </div>
+
     <!-- Main Body Area End Here -->
     <!-- jquery-->
     <script src="js/jquery-2.2.4.min.js" type="text/javascript"></script>
     <!-- Plugins js -->
     <script src="js/plugins.js" type="text/javascript"></script>
     <!-- Bootstrap js -->
-    
+
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
     <!-- WOW JS -->
     <script src="js/wow.min.js"></script>
