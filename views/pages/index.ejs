@@ -371,30 +371,34 @@
           "
           class="event-inner-area"
         >
-          <ul class="event-wrapper">
-            <h2 class="title-default-left" style="text-align: center">
-              Upcoming Event
-            </h2>
-            <li>
-              <div class="event-calender-wrapper">
-                <div class="event-calender-holder">
-                  <h3><%= events[0].date[0] %></h3>
-                  <p><%= events[0].date[1] %></p>
-                  <span><%= events[0].date[2] %></span>
-                </div>
+        <ul class="event-wrapper" style="width: 100%">
+          <h2 class="title-default-left" style="text-align: center">
+            Upcoming Event
+          </h2>
+          <li>
+            <div class="event-calender-wrapper">
+              <div class="event-calender-holder">
+                <p>
+                  <%= events[0].date[0] %>/<%= events[0].date[1]-%>/<%=
+                  events[0].date[2] %>
+                </p>
+                <!-- <h3><%= events[0].date[0] %></h3> -->
+                <!-- <p><%= events[0].date[1] %></p>
+                <p><%= events[0].date[2] %></p> -->
               </div>
-              <div class="event-content-holder">
-                <h3>
-                  <a href="single-event.html"><%= events[0]._doc.title %></a>
-                </h3>
-                <p><%= events[0]._doc.description %></p>
-                <ul>
-                  <li><%= events[0]._doc.time %></li>
-                  <li><%= events[0]._doc.venue %></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
+            </div>
+            <div class="event-content-holder">
+              <h3>
+                <a href="single-event.html"><%= events[0]._doc.title %></a>
+              </h3>
+              <p><%= events[0]._doc.description %></p>
+              <ul>
+                <li><%= events[0]._doc.time %></li>
+                <li><%= events[0]._doc.venue %></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
         </div>
       </section>
 
@@ -467,9 +471,9 @@
       <div class="news-event-area">
         <div class="container">
           <div class="row">
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 news-inner-area">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 event-inner-area">
               <h2 class="title-default-left">Latest News</h2>
-              <ul class="news-wrapper">
+              <!-- <ul class="news-wrapper">
                 <% news.forEach((item)=> { %>
                 <li>
                   <div class="news-img-holder">
@@ -489,8 +493,31 @@
                   </div>
                 </li>
                 <% }) %>
+              </ul> -->
+              <ul class="event-wrapper">
+                <% news.forEach((item)=> { %>
+                <li>
+                  <div class="event-calender-wrapper">
+                    <div class="event-calender-holder">
+                      <p><%= item.date %> %></p>
+                      <!-- <p><%= item.date[1] %></p>
+                      <p><%= item.date[2] %></p> -->
+                    </div>
+                  </div>
+                  <div class="event-content-holder">
+                    <h3>
+                      <a href="single-event.html"><%= item._doc.title %></a>
+                    </h3>
+                    <p><%= item._doc.description %></p>
+                    <ul>
+                      <li><%= item._doc.time %></li>
+                      <li><%= item._doc.venue %></li>
+                    </ul>
+                  </div>
+                </li>
+                <% }) %>
               </ul>
-              <div class="news-btn-holder">
+              <div class="event-btn-holder">
                 <a href="#" class="view-all-accent-btn">View All</a>
               </div>
             </div>
@@ -561,9 +588,12 @@
                 <li>
                   <div class="event-calender-wrapper">
                     <div class="event-calender-holder">
-                      <h3><%= item.date[0] %></h3>
-                      <p><%= item.date[1] %></p>
-                      <span><%= item.date[2] %></span>
+                      <p>
+                        <%= item.date[0] %>/<%= item.date[1]-%>/<%= item.date[2]
+                        %>
+                      </p>
+                      <!-- <p><%= item.date[1] %></p>
+                      <p><%= item.date[2] %></p> -->
                     </div>
                   </div>
                   <div class="event-content-holder">
