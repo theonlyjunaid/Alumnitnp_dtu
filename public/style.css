@@ -483,11 +483,26 @@ ul {
   z-index: 1;
 }
 .title-default-center {
+  font-size: 20px;
   text-transform: capitalize;
   text-align: center;
   font-weight: 500;
   margin-bottom: 45px;
   color: rgb(16,1,1);
+}
+.discription-default-center {
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 45px;
+  color: rgb(16,1,1);
+}
+.para-default-center{
+  text-align: center;
+  font-weight: 30;
+  margin-bottom: 45px;
+  color: rgb(16,1,1);
+
 }
 @media only screen and (max-width: 767px) {
   .title-default-center {
@@ -500,6 +515,8 @@ ul {
   }
 }
 .title-default-left {
+  margin-top: 5px;
+  font-size: 21px;
   text-transform: capitalize;
   text-align: left;
   font-weight: 500;
@@ -6786,26 +6803,31 @@ ul.course-feature2 li:before {
   -webkit-flex: 3;
   flex: 3;
 }
+.event-inner-area .event-wrapper > li .event-content-holder h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
 .event-inner-area .event-wrapper > li .event-content-holder h3 {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 450;
   margin-bottom: 10px;
 }
 .event-inner-area .event-wrapper > li .event-content-holder h3 a {
   color: rgb(16,1,1);
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -ms-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.24s ease-out;
+  -moz-transition: all 0.24s ease-out;
+  -ms-transition: all 0.24s ease-out;
+  -o-transition: all 0.24s ease-out;
+  transition: all 0.24s ease-out;
 }
 .event-inner-area .event-wrapper > li .event-content-holder h3 a:hover {
   color: #fdc800;
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -ms-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 .event-inner-area .event-wrapper > li .event-content-holder p {
   margin-bottom: 10px;
@@ -10294,11 +10316,28 @@ ul.course-feature2 li:before {
   
   
 }
-#WhyDonatec{
+.WhyDonatec{
   padding: 2rem 7rem;
   padding-top: 0rem;
 }
+.WhyDonatec h3{
+  font-size: 25px ;
+  font-weight: 400;
+  text-align: center;
 
+}
+.WhyDonatec h1{
+  font-size: 33px ;
+  font-weight: 400;
+  text-align: center;
+
+}
+.why-donate-heading{
+  font-size: 30px ;
+  font-weight: 500;
+  text-align: center;
+
+}
 
 .dropdown .dropdown-menu {
   border-radius:0;
@@ -10362,18 +10401,8 @@ font-size: large;
 margin-top: 1rem;
 padding-top: 1rem;
 
-}
-.subdrop {
-  display: none;
-  
-}
-.maindrop{
-  
+
 }
 
-.maindrop:hover .subdrop{
-  display: block;
-  
-}
 
 
