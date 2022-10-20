@@ -1,12 +1,11 @@
 
 
-/* header*/
-    .headerofgallery{
+header{
     height: 80vh;
     min-height: 560px;
     position: relative;
     animation: slider 6s infinite linear;
-}   
+}
 @keyframes slider{
     0% {
         background: url('../img/gallery/DTUcampus.jpg') no-repeat center / cover;
