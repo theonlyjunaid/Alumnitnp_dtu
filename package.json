@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
@@ -27,5 +27,13 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theonlyjunaid/Alumnitnp_dtu.git"
+  },
+  "bugs": {
+    "url": "https://github.com/theonlyjunaid/Alumnitnp_dtu/issues"
+  },
+  "homepage": "https://github.com/theonlyjunaid/Alumnitnp_dtu#readme"
 }
